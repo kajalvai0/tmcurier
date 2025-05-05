@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tornado Courier - দেশের সবচেয়ে নির্ভরযোগ্য কুরিয়ার সার্ভিস</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tiro+Bangla&display=swap');
+        
+        .bangla-font {
+            font-family: 'Tiro Bangla', serif;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #4f46e5 0%, #10b981 100%);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .tracking-input:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.3);
+        }
+    </style>
+</head>
+<body class="bangla-font bg-gray-50">
+    <!-- Header/Navigation -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mr-3">
+                    <i class="fas fa-bolt text-white text-2xl"></i>
+                </div>
+                <h1 class="text-2xl font-bold text-blue-600">টর্নেডো কুরিয়ার</h1>
+            </div>
+            
+            <nav class="hidden md:flex space-x-8">
+                <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">হোম</a>
+                <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">সার্ভিসসমূহ</a>
+                <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">শুল্ক</a>
+                <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">আমাদের সম্পর্কে</a>
+                <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">যোগাযোগ</a>
+            </nav>
+            
+            <div class="flex items-center space-x-4">
+                <button class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition">
+                    লগইন
+                </button>
+                <button class="md:hidden">
+                    <i class="fas fa-bars text-gray-700 text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white">
+        <div class="container mx-auto px-4 py-16 md:py-24">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h2 class="text-3xl md:text-5xl font-bold mb-6">দেশের যে কোন প্রান্তে দ্রুততম ডেলিভারি</h2>
+                    <p class="text-lg mb-8">আপনার পণ্য সুরক্ষিতভাবে এবং সময়মতো পৌঁছে দিতে আমরা প্রতিশ্রুতিবদ্ধ। হোম সার্ভিসের মাধ্যমে আপনার দরজায়ই পণ্য গ্রহণ করুন।</p>
+                    <div class="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4">
+                        <button class="bg-white text-blue-600 px-6 py-3 rounded-md font-bold hover:bg-gray-100 transition">
+                            অর্ডার করুন এখনই <i class="fas fa-arrow-right ml-2"></i>
+                        </button>
+                        <button class="border-2 border-white px-6 py-3 rounded-md font-bold hover:bg-white hover:text-blue-600 transition">
+                            আমাদের সার্ভিস <i class="fas fa-info-circle ml-2"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Courier Delivery" class="rounded-lg shadow-xl w-full max-w-md">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tracking Section -->
+    <section class="bg-white py-12 shadow-sm">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto bg-gray-100 rounded-xl p-6">
+                <h3 class="text-2xl font-bold text-center mb-6 text-gray-800">আপনার পার্সেল ট্র্যাক করুন</h3>
+                <div class="flex flex-col md:flex-row">
+                    <input type="text" placeholder="আপনার ট্র্যাকিং নম্বর লিখুন" class="tracking-input flex-grow px-4 py-3 rounded-md border border-gray-300 focus:border-blue-500 mb-3 md:mb-0 md:mr-3">
+                    <button class="bg-blue-600 text-white px-6 py-3 rounded-md font-medium hover:bg-blue-700 transition">
+                        ট্র্যাক করুন <i class="fas fa-search ml-2"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-4 text-gray-800">আমাদের সার্ভিসসমূহ</h2>
+            <p class="text-center text-gray-600 max-w-2xl mx-auto mb-12">দেশের সবচেয়ে নির্ভরযোগ্য কুরিয়ার সার্ভিস প্রদানকারী হিসেবে আমরা নিম্নলিখিত সেবাগুলো প্রদান করছি</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="service-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="h-48 bg-blue-100 flex items-center justify-center">
+                        <i class="fas fa-home text-blue-600 text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3 text-gray-800">হোম ডেলিভারি সার্ভিস</h3>
+                        <p class="text-gray-600">আপনার বাড়ির দরজায়ই আমরা পণ্য পৌঁছে দেব। ঢাকা, চট্টগ্রাম, সিলেটসহ দেশের সকল বিভাগীয় শহরে এই সেবা পাওয়া যাচ্ছে।</p>
+                    </div>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="h-48 bg-green-100 flex items-center justify-center">
+                        <i class="fas fa-truck text-green-600 text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3 text-gray-800">এক্সপ্রেস ডেলিভারি</h3>
+                        <p class="text-gray-600">জরুরী ডেলিভারির জন্য আমাদের এক্সপ্রেস সার্ভিস। ২৪ ঘন্টার মধ্যে ঢাকা শহরে এবং ৪৮ ঘন্টার মধ্যে বিভাগীয় শহরগুলোতে ডেলিভারি।</p>
+                    </div>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="h-48 bg-purple-100 flex items-center justify-center">
+                        <i class="fas fa-box-open text-purple-600 text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3 text-gray-800">পার্সেল ট্র্যাকিং</h3>
+                        <p class="text-gray-600">রিয়েল টাইমে আপনার পার্সেলের অবস্থান জানুন। আমাদের অ্যাপ এবং ওয়েবসাইটের মাধ্যমে আপনি সহজেই ট্র্যাক করতে পারবেন।</p>
+                    </div>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="service-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="h-48 bg-yellow-100 flex items-center justify-center">
+                        <i class="fas fa-globe-asia text-yellow-600 text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3 text-gray-800">আন্তর্জাতিক কুরিয়ার</h3>
+                        <p class="text-gray-600">বিদেশে পণ্য পাঠানোর জন্য আমাদের বিশ্বস্ত আন্তর্জাতিক কুরিয়ার সার্ভিস। সকল প্রধান দেশে আমরা সেবা প্রদান করি।</p>
+                    </div>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="service-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="h-48 bg-red-100 flex items-center justify-center">
+                        <i class="fas fa-warehouse text-red-600 text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3 text-gray-800">ওয়্যারহাউজ সার্ভিস</h3>
+                        <p class="text-gray-600">আপনার পণ্য সংরক্ষণের জন্য আমাদের নিরাপদ ওয়্যারহাউজ সুবিধা। প্রয়োজনমতো আপনি পণ্য পাঠাতে বা গ্রহণ করতে পারবেন।</p>
+                    </div>
+                </div>
+                
+                <!-- Service 6 -->
+                <div class="service-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="h-48 bg-indigo-100 flex items-center justify-center">
+                        <i class="fas fa-headset text-indigo-600 text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3 text-gray-800">২৪/৭ কাস্টমার সাপোর্ট</h3>
+                        <p class="text-gray-600">যেকোনো সমস্যা বা জিজ্ঞাসার জন্য আমাদের কাস্টমার কেয়ার সার্ভিস সবসময় আপনার পাশে। কল, ইমেইল বা লাইভ চ্যাটের মাধ্যমে যোগাযোগ করুন।</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-4 text-gray-800">কিভাবে কাজ করে</h2>
+            <p class="text-center text-gray-600 max-w-2xl mx-auto mb-12">মাত্র তিনটি সহজ ধাপে আপনার পণ্য পাঠান বা গ্রহণ করুন</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Step 1 -->
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-blue-600 text-2xl font-bold">১</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">অর্ডার করুন</h3>
+                    <p class="text-gray-600">আমাদের ওয়েবসাইট, অ্যাপ অথবা কল সেন্টারের মাধ্যমে অর্ডার করুন। আমাদের প্রতিনিধি আপনার বাড়িতে এসে পার্সেল সংগ্রহ করবে।</p>
+                </div>
+                
+                <!-- Step 2 -->
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-green-600 text-2xl font-bold">২</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">প্রসেসিং</h3>
+                    <p class="text-gray-600">আমাদের লজিস্টিক টিম পার্সেল প্রসেস করবে এবং নিরাপদভাবে প্যাকেজিং করবে। আপনি ট্র্যাকিং নম্বর পেয়ে যাবেন।</p>
+                </div>
+                
+                <!-- Step 3 -->
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-purple-600 text-2xl font-bold">৩</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">ডেলিভারি</h3>
+                    <p class="text-gray-600">আপনার পার্সেল নির্ধারিত সময়ের মধ্যে গন্তব্যে পৌঁছে যাবে। আপনি SMS এবং ইমেইলের মাধ্যমে নোটিফিকেশন পাবেন।</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-4 text-gray-800">আমাদের গ্রাহকদের মতামত</h2>
+            <p class="text-center text-gray-600 max-w-2xl mx-auto mb-12">দেশের হাজারো সন্তুষ্ট গ্রাহক আমাদের সাথে আছেন</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-user text-blue-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">আহমেদ রহমান</h4>
+                            <p class="text-gray-500 text-sm">ঢাকা</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">"টর্নেডো কুরিয়ারের সেবা খুবই ভালো লেগেছে। আমার জরুরী ডকুমেন্ট সময়মতো পৌঁছে দিয়েছে। বিশেষ করে তাদের হোম সার্ভিস খুব সুবিধাজনক।"</p>
+                    <div class="flex mt-3 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-user text-green-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">সুমাইয়া আক্তার</h4>
+                            <p class="text-gray-500 text-sm">চট্টগ্রাম</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">"ই-কমার্স ব্যবসার জন্য নিয়মিত কুরিয়ার সার্ভিসের প্রয়োজন হয়। টর্নেডো কুরিয়ার সবচেয়ে নির্ভরযোগ্য সার্ভিস দেয়। তাদের ট্র্যাকিং সিস্টেমও খুব ভালো।"</p>
+                    <div class="flex mt-3 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-blue-600 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">আজই আপনার পণ্য পাঠান টর্নেডো কুরিয়ারে</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">দেশের সবচেয়ে দ্রুততম এবং নির্ভরযোগ্য কুরিয়ার সার্ভিসের সাথে যুক্ত হোন</p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-3 sm:space-y-0 sm:space-x-4">
+                <button class="bg-white text-blue-600 px-8 py-3 rounded-md font-bold hover:bg-gray-100 transition">
+                    অর্ডার করুন <i class="fas fa-paper-plane ml-2"></i>
+                </button>
+                <button class="border-2 border-white px-8 py-3 rounded-md font-bold hover:bg-blue-700 transition">
+                    কল করুন <i class="fas fa-phone ml-2"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white pt-12 pb-6">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <!-- About -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">টর্নেডো কুরিয়ার</h3>
+                    <p class="text-gray-400">দেশের সবচেয়ে দ্রুততম এবং নির্ভরযোগ্য কুরিয়ার সার্ভিস প্রদানকারী প্রতিষ্ঠান। ২০১০ সাল থেকে সেবা প্রদান করে আসছি।</p>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">দ্রুত লিংক</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">হোম</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">আমাদের সম্পর্কে</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">সার্ভিসসমূহ</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">শুল্ক ক্যালকুলেটর</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">প্রাইভেসি পলিসি</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Services -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">সার্ভিসসমূহ</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">হোম ডেলিভারি</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">এক্সপ্রেস ডেলিভারি</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">আন্তর্জাতিক কুরিয়ার</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">পার্সেল ট্র্যাকিং</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">ওয়্যারহাউজ সার্ভিস</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">যোগাযোগ</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-gray-400"></i>
+                            <span class="text-gray-400">১২৩ কুরিয়ার সেন্টার, মতিঝিল, ঢাকা-১০০০</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-3 text-gray-400"></i>
+                            <span class="text-gray-400">+৮৮০ ১৯১২ ৩৪৫৬৭৮</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-gray-400"></i>
+                            <span class="text-gray-400">info@tornadocourier.com</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-clock mr-3 text-gray-400"></i>
+                            <span class="text-gray-400">সকাল ৮টা - রাত ১০টা (প্রতিদিন)</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 pt-6 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-3 md:mb-0">© ২০২৩ টর্নেডো কুরিয়ার. সকল স্বত্ব সংরক্ষিত।</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white">প্রাইভেসি পলিসি</a>
+                    <a href="#" class="text-gray-400 hover:text-white">টার্মস অ্যান্ড কন্ডিশনস</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Action Button -->
+    <div class="fixed bottom-6 right-6">
+        <button class="w-14 h-14 bg-blue-600 rounded-full shadow-lg flex items-center justify-center text-white hover:bg-blue-700 transition">
+            <i class="fas fa-headset text-2xl"></i>
+        </button>
+    </div>
+
+    <script>
+        // Simple tracking form submission
+        document.querySelector('.tracking-input').addEventListener('keypress', function(e) {
+            if(e.key === 'Enter') {
+                const trackingNumber = this.value.trim();
+                if(trackingNumber) {
+                    alert(`ট্র্যাকিং করা হচ্ছে: ${trackingNumber}\n(এই ডেমোতে শুধু UI দেখানো হচ্ছে)`);
+                }
+            }
+        });
+        
+        // Mobile menu toggle would go here
+        // document.querySelector('.mobile-menu-button').addEventListener('click', function() {
+        //     document.querySelector('.mobile-menu').classList.toggle('hidden');
+        // });
+    </script>
+<p style="border-radius: 8px; text-align: center; font-size: 12px; color: #fff; margin-top: 16px;position: fixed; left: 8px; bottom: 8px; z-index: 10; background: rgba(0, 0, 0, 0.8); padding: 4px 8px;">Made with <img src="https://enzostvs-deepsite.hf.space/logo.svg" alt="DeepSite Logo" style="width: 16px; height: 16px; vertical-align: middle;display:inline-block;margin-right:3px;filter:brightness(0) invert(1);"><a href="https://enzostvs-deepsite.hf.space" style="color: #fff;text-decoration: underline;" target="_blank" >DeepSite</a> - 🧬 <a href="https://enzostvs-deepsite.hf.space?remix=mahfuzak/tmcurier" style="color: #fff;text-decoration: underline;" target="_blank" >Remix</a></p></body>
+</html>
